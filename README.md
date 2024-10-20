@@ -4,6 +4,12 @@
 
 Clone this repo
 
+#### Set the ownership and permissions for writeable dir
+
+```sh
+sudo chmod -R 755 app/writable && sudo chown -R www-data:www-data app/writable
+```
+
 ```sh
 docker compose up -d
 ``` 
@@ -35,12 +41,3 @@ The app will be accessible at http://localhost:8080
 Emails: 'user1@gmail.com,user2@gmail.com,user3@gmail.com, admin@gmail.com';
 Password: '123456';
 ```
-
-#### Issue: If getting any writable related error like this just set permissions and wwnership for the writable dir
-
-![My Image](./image.png)
-
-```sh
-sudo chmod -R 755 app/writable && sudo chown -R www-data:www-data app/writable
-```
-**
