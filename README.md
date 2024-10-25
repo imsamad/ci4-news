@@ -1,4 +1,4 @@
-** 
+# CI4-news 
 ## Set up guide
 
 
@@ -9,7 +9,7 @@ Clone this repo
 ```sh
 sudo chmod -R 755 app/writable && sudo chown -R www-data:www-data app/writable
 ```
-
+#### Spin the app
 ```sh
 docker compose up -d
 ``` 
